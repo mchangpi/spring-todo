@@ -1,0 +1,29 @@
+<div th:replace="~{common/header}">The Static Templates</div>
+<div th:replace="~{common/navigation}">The Static Templates</div>
+  	<div class="container">
+		<h4 th:text="'Welcome ' + ${name}"></h4>
+		<hr>
+		<h5>Your ToDo List are</h5>
+			<table class="table">
+			<thead>
+				<tr>
+					<th>Description</th>
+					<th>Target Date</th>
+					<th>Is Done?</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>	
+					<tr th:each="toDo : ${toDos}">	
+						<td><span th:text="${toDo.description}"></span></td>
+						<td><span th:text="${toDo.targetDate}"></span></td>
+						<td><span th:text="${toDo.done}"></span></td>
+						<td><a th:href="'updatetodo?id=' + ${toDo.id}" class="btn btn-success">Update</a></td>
+						<td><a th:href="'deletetodo?id=' + ${toDo.id}" class="btn btn-warning">Delete</a></td>
+					</tr>
+			</tbody>
+			</table>
+			<a href="addtodo" class="btn btn-success">Add ToDo</a>
+	</div>
+<div th:replace="~{common/footer}">The Static Templates</div>
