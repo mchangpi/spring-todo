@@ -2,31 +2,31 @@
 <div th:replace="~{common/header}">The Static Templates</div>
 <div th:replace="~{common/navigation}">The Static Templates</div>
 <div class="container d-flex flex-column w-75">
-	<h4>Enter Todo Details</h4>
+	<h4>請輸入待辦事項細節</h4>
 	<hr>
 	<form method="post" th:object="${toDo}">
 		<!-- 2 way binding -->
-		<fieldset>
-			<label style="width: 90px">Description:</label> <input type="text"
-				th:field="*{description}" required="required" size="50"></input> <br>
+		<fieldset class="d-flex">
+			<label style="width: 110px">待辦事項內容:</label> <input type="text"
+				th:field="*{description}" required="required" class="flex-grow-1"></input> <br>
 			<p th:if="${#fields.hasErrors('description')}"
 				th:errors="*{description}" class="text-danger"></p>
 		</fieldset>
 		<br>
-		<fieldset>
-			<label style="width: 90px">Target Date:</label> <input type="text"
+		<fieldset class="d-flex">
+			<label style="width: 110px">預定完成日期:</label> <input type="text"
 				th:field="*{targetDate}" required="required"></input> <br>
 		</fieldset>
 		<input type="hidden" path="id" /> <br>
-		<fieldset>
-			<label style="width: 90px">Is Done?:</label> <input type="checkbox"
+		<fieldset class="d-flex align-items-center">
+			<label style="width: 110px">是否已完成 ?</label> <input type="checkbox"
 				th:field="*{done}" value="done" style="width: 20px; height: 20px"></input>
 		</fieldset>
 		<br>
 		<div class="d-flex justify-content-between w-100 gap-5">
-			<a href="listtodos" class="btn btn-warning w-50" >Cancel</a>
+			<a href="listtodos" class="btn btn-warning w-50" >取消</a>
 			<input type="submit" class="btn btn-success w-50" 
-				value="Submit" />
+				value="提交" />
 		</div>
 	</form>
 </div>
