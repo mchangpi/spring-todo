@@ -14,7 +14,7 @@ https://github.com/mchangpi/spring-todo
 
 該網站實作了下述 Spring Boot 功能:  
 
-1\. 以 Thymeleaf 模板及 Bootstrap 框架建立網頁前端，並以@ModelAttribute 建立表單視圖(view)與控制器(controller)的資料綁定。  
+1\. 以 Thymeleaf 模板及 Bootstrap 框架建立網頁前端，並以 ModelMap 及 @ModelAttribute 建立表單視圖(view)與控制器(controller)之間的資料綁定。  
 
 2\. 以 Spring Data JPA 及 Hibernate 儲存及管理待辦事項資料。  
 
