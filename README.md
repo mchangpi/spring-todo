@@ -1,12 +1,12 @@
 您好，我是張志榮(Milton Chang)  
-我目前正尋求 Java (Spring Boot) 後端程式設計相關工作機會。
+我目前正尋求 Java (Spring Boot) 後端程式設計相關工作機會。  
 請參考我的履歷:  
 https://www.cakeresume.com/mchangpi-backend
 
 此專案為參考網路課程 <a href="https://www.udemy.com/course/spring-boot-tutorial-for-beginners/" target="_blank">Learn Spring Boot 3 in 100 Steps</a>  
 實作的待辦事項清單( Todo List )網站，可新增/編輯/刪除待辦事項:
 
-https://spring-todo-0-1.onrender.com
+https://spring-todo-0-1.onrender.com  
 (請使用測試帳號/密碼 test/test)
 
 相關程式碼:  
